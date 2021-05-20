@@ -46,11 +46,23 @@ function getEvens(numbers) {
  * countOccurences(52, [11, 35, 52, 14, 56, 601, 52, 777, 888, 999, 52]) -> 3
  */
 function countOccurences(x, numbers) {
+
   let counter = numbers.filter(function (counters) {
     return counters === x;
 
   });
   return counter.length;
+
+  // // other way to solve it
+  // let count = 0;
+  // numbers.map(function (number) {
+  //   if (number === x)
+  //     count++;
+  // })
+  // return count
+
+
+
 }
 
 // a = [11, 35, 52, 14, 56, 601, 52, 777, 888, 999, 52];
